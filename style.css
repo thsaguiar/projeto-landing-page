@@ -1,0 +1,157 @@
+/* o * é usado para mudar o estilo de TODA a página */
+*{
+    margin: 0px; /* Recomendado sempre "zerar" a margem da página*/
+    font-family: "Cactus Classical Serif", serif; /*Aqui é determinado que em todo o site será utilizado essa fonte*/
+}
+
+/* Secao menu superior (top menu)*/
+#LOGO{
+    margin-top: 50px; /*Afasta do topo 50px*/
+    margin-left: 50px; /*Afasta do esquerda 50px*/
+}
+
+#title1_topmenu{
+    color: aliceblue;
+    margin-top: 50px;
+    margin-left: 125px;
+}
+
+#paragraph1_topmenu{
+    color: aliceblue;
+    margin-top: 10px;
+    margin-left: 125px;
+}
+
+#menusuperior{
+    background-image: url(/images/fundo-menusuperior.svg);
+    color:aliceblue;
+    padding-bottom: 100px;
+}
+
+
+/* ------- Secao menu informativo ------- */
+#menuinformativo{
+    background-color: #EAECE5;
+    display: grid;
+    grid-auto-flow: column;
+    columns: auto;
+}
+
+.icon{
+        margin: 35px 0px 35px 100px; /* ordem "relógio": top, right, bottom e left*/
+        padding: 25px; /* Afasta o icone do texto informativo em 25px*/
+}
+
+.textinformativo{
+        display: flex; /* Transforma o elemento em um container flexível. */
+        align-items: center; /* alinha os elementos de dentro do conteiner. */
+}
+
+
+/* Seção vídeo*/
+#secaovideo{
+    display: grid;
+    grid-auto-flow: column;
+    columns: auto;
+}
+
+#titulovideo{
+    color:#247BA0;
+    margin-top: 50px;
+}
+
+#textovideo{
+    color:#383838;
+
+}
+
+#video{
+    margin: 50px 50px 50px 100px;
+}
+
+
+/* Seção carrocel */
+#Carrocel{
+    background-color: #247BA0;
+    padding:50px;
+}
+
+#titulocarrocel{
+    color: #EAECE5;
+    text-align:center;
+    font-size: 25px;
+}
+
+#cards{
+    margin-top: 25px;
+    display: grid;
+    grid-auto-flow: column;
+    columns: auto;
+}
+
+.card{
+    margin-left: 50px;
+}
+
+#setaesquerda{
+    display: none;
+}
+
+#Samantha{
+    display: none;
+}
+
+.seta{
+    margin-top: 25%;
+    cursor: pointer; /*muda o cursor de seta para uma mãozinha*/
+
+}
+
+.seta:hover{ /* adiciona uma flutuação */
+    transform: translateY(-7px); /* indica que o botao irá deslocar -7px*/
+    transition-duration: 0.25s; /* indica a velocidade de efeito */
+}
+
+/*Formulario*/
+
+#formulario{
+    text-align: center;
+
+}
+
+#textoformulario{
+    font-size: 25px;
+    margin: 25px;
+    color: #383838;
+}
+
+input{
+    width: 300px;
+    height: 40px;
+    background-color: #EAECE5;
+    margin: 15px;
+    border: 0px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+button{
+    background-color: #247BA0;
+    color: #ffffff;
+    width: 250px;
+    height: 40px;
+    margin-bottom: 50px;
+    border: 0px;
+    border-radius: 5px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #4296b9;
+    color: white;
+    transform: translateY(-7px);
+    transition-duration: 0.5s;
+    box-shadow: 0px 15px 20px 0px #31677e77;
+    
+}

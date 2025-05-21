@@ -1,0 +1,78 @@
+<!-- A primeira etapa é criar o index.html. Criando o arquivo, basta criar a estrutura básica do html usando o html:5-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!--Meta tag pré carregada-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Meta tag pré carregada-->
+    <link rel="stylesheet" href="style.css"> <!--"linka" o arquivo HTML ao arquivo CSS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&display=swap" rel="stylesheet"> <!--As fontes 
+    precisam ser carregadas no head. Buscar modelos no google fontes-->
+    <title> Escola DNC </title> <!--Renomeado conforme nome do site-->
+</head>
+<!-- Até aqui foi a parte de metadados. Abaixo começa a parte acessível ao usuário do site-->
+<body>
+    <!-- MENU SUPERIOR -->
+    <div id="menusuperior">
+        <a href="https://www.escoladnc.com.br/"><img id="LOGO" src="./images/Logo.svg" alt="ERROR"></a> <!--tag <a> + <img>, ou seja, uma está dentro da outra para gerar um hiperlink-->
+        <h1 id="title1_topmenu">Dê os primeiros passos da <br>
+        sua carreira em Tecnologia</h1> <!--h1 é o titulo 1. br é broken, ou seja, enter no texto (paragrafo)-->
+        <p id="paragraph1_topmenu">Inscreva-se no curso gratuito de Introdução à <br> 
+        Tecnologia da DNC School e aprenda os principais <br>
+        fundamentos para construir experiências efetivas.</p>
+    </div>
+
+    <!-- MENU INFORMATIVO -->
+    <div ID="menuinformativo">
+        <p class="textinformativo"> <img src="/Icon/iconcertificado.svg" class="icon" alt="ERRO"> Certificado de conclusão</p> <!-- Aqui foi feito a soma de 3 tecnicas: A tag p + a tag img src + o texto ao lado do ícone -->
+        <p class="textinformativo"> <img src="/Icon/iconwatch.svg" class="icon" alt="ERRO"> 4 horas de conteúdo</p>
+        <p class="textinformativo"> <img src="/Icon/icocamera.svg" class="icon" alt="ERRO"> Aulas online gravadas</p>
+    </div>
+
+    <!-- DEPOIMENTO -->
+<div id="secaovideo">
+    <iframe id="video" width="502" height="283" src="https://www.youtube.com/embed/45BeP-XJDFA" title="Conheça a Jornada do Aluno DNC" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!-- link copiado direto do youtube. dimensao padrao 502 x 283 -->
+    <div id="comentario"> <!-- Esse segundo div é para "enganar" o display grid. Aqui tranforma o h1 e o p em um único elemento-->
+        <h1 id="titulovideo">
+        Aprenda com especialistas e <br>
+        comece seu primeiro projeto
+        </h1> <br><br>
+        <p id="textovideo">Conheça o processo de desenvolvimento e entenda como utilizar <br>
+        os principais métodos e ferramentas da área para resolver <br>
+        problemas complexos.
+        <br><br>
+        Conquiste seu certificado e desenvolva um projeto prático para <br>
+        aplicar seus conhecimentos.</p>
+    </div>
+</div>
+
+    <!-- Carrocel -->
+<div id="Carrocel">
+    <h1 id="titulocarrocel"> Mais de 500 alunos já iniciaram seus estudos </h1>
+    <!--Divisao dos cards-->
+    <div id="cards">
+        <img id="setaesquerda" onclick="rolarparaesquerda()" class="seta" src="/Icon/setaesquerda.svg" alt="">
+        <img id="Bruna" class="card" src="/Cards/Bruna.svg" alt="">
+        <img id="Leonardo" class="card" src="/Cards/Leonardo.svg" alt="">
+        <img id="Samantha" class="card" src="/Cards/Samantha.svg" alt="">
+        <img id="setadireita" onclick="rolarparadireita()" class="seta" src="/Icon/setadireita.svg" alt="">
+    </div>
+<!--"onclick" acima é um evento ligado ao js-->
+</div>
+
+<!--Formulários-->
+<div id="formulario">
+    <h1 id="textoformulario">Comece agora mesmo e dê o próximo passo da sua carreira</h1>
+    <form action="https://api.sheetmonkey.io/form/uRBoE8YMPADjXgfk7UXAnH" method="post">
+        <input type="Nome" placeholder="Nome" name="Name" required> <br> <!--placeholder é o que aparecerá no campo input antes de algo ser digitado-->
+        <input type="email" placeholder="E-mail" name="Email" required> <br>
+        <input type="number" placeholder="Telefone" name="Phone" required> <br>
+        <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+        <button type="submit">Acesse a ementa grátis</button>
+    </form>
+</div>
+    <script src="index.js"></script>
+</body>
+</html>
